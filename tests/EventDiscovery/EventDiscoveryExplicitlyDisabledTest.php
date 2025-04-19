@@ -47,7 +47,7 @@ namespace InterNACHI\Modular\Tests\EventDiscovery {
 		{
 			parent::resolveApplicationConfiguration($app);
 			
-			$app['config']['app-modules.should_discover_events'] = false;
+			$app['config']['platform.should_discover_events'] = false;
 		}
 	}
 }

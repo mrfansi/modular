@@ -9,7 +9,7 @@ class ProjectImlWriter extends ConfigWriter
 {
 	public function write(): bool
 	{
-		$modules_directory = config('app-modules.modules_directory', 'app-modules');
+		$modules_directory = config('platform.modules_directory', 'platform');
 		
 		$iml = $this->getNormalizedPluginConfig();
 		$source_folders = $iml->xpath('//component[@name="NewModuleRootManager"]//content[@url="file://$MODULE_DIR$"]//sourceFolder');
